@@ -1,6 +1,23 @@
 import { useState } from 'react';
 import Field from './memberField';
 
+const Message = ({status}) =>
+{
+    if (status)
+    {
+        return (
+            <div>
+                Member Added
+            </div>
+        )
+    }
+    return (
+        <div>
+            
+        </div>
+    )
+}
+
 const AddMember = () =>
 {
 
@@ -9,6 +26,8 @@ const AddMember = () =>
     const [disUser, setUser] = useState("") 
     const [disNum, setNum] = useState("") 
 
+    const [status, setStatus] = useState(false)
+
     const handleSubmit = (event) =>
     {
         event.preventDefault()
@@ -16,6 +35,9 @@ const AddMember = () =>
         console.log(forum)
         console.log(disUser)
         console.log(disNum)
+        setStatus(true)
+
+        setTimeout(() => setStatus(false), 2000)
     }
 
 
@@ -27,7 +49,8 @@ const AddMember = () =>
                 <Field name="Discord Username" initial={disUser} set={e => setUser(e.target.value)}/>
                 <Field name="Discord #" initial={disNum} set={e => setNum(e.target.value)}/>
                 <button type="submit">Add</button>
-            </form>   
+            </form>
+            <Message status={status}/>
         </div>
     )
 }

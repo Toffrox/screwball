@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "My Extension",
+  "name": "Screwball",
   "description": "This extension is a starting point to create a real Chrome extension",
   "version": "0.0.1",
 
@@ -15,5 +15,7 @@
     "128": "logo-small.png"
   },
   "permissions": [
-  ]
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-1bg/5Z0nK0mFXeoDRezZgGvYRlGxFlyz0bVmI8dNW0U='; object-src 'self'"
+
 }
