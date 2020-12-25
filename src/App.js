@@ -1,5 +1,5 @@
 import './App.css';
-import AddMember from './member';
+import AddMember from './new_member/Member';
 
 function App() {
   

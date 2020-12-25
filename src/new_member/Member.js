@@ -1,22 +1,7 @@
 import { useState } from 'react';
-import Field from './memberField';
-
-const Message = ({status}) =>
-{
-    if (status)
-    {
-        return (
-            <div>
-                Member Added
-            </div>
-        )
-    }
-    return (
-        <div>
-            
-        </div>
-    )
-}
+import Field from './MemberField';
+import Message from './Message';
+import validMember from './validMember';
 
 const AddMember = () =>
 {
@@ -27,16 +12,17 @@ const AddMember = () =>
     const [disNum, setNum] = useState("") 
 
     const [status, setStatus] = useState(false)
+    const [statusMessage, setStatusMessage] = useState("")
+
+
 
     const handleSubmit = (event) =>
     {
         event.preventDefault()
-        console.log(nation)
-        console.log(forum)
-        console.log(disUser)
-        console.log(disNum)
-        setStatus(true)
+        
+        setStatusMessage(validMember({nation: nation, forum: forum, disUser: disUser, disNum: disNum}))
 
+        setStatus(true)
         setTimeout(() => setStatus(false), 2000)
     }
 
@@ -50,7 +36,7 @@ const AddMember = () =>
                 <Field name="Discord #" initial={disNum} set={e => setNum(e.target.value)}/>
                 <button type="submit">Add</button>
             </form>
-            <Message status={status}/>
+            <Message status={status} message={statusMessage}/>
         </div>
     )
 }
