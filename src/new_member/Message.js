@@ -10,7 +10,7 @@ const Message = ({status, message}) =>
     }
     return (
         <div>
-             
+            &nbsp;
         </div>
     )
 }
