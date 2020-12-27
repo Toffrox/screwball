@@ -6,7 +6,10 @@ function App() {
 
   return (
     <div>
-      <img id="logo" src="logo-small.png" alt="Logo"></img>
+      <img id="logo" src="swirl.png" alt="Logo"></img>
+      <h1>        
+        Screwball
+      </h1>
       <hr></hr>
       <div class="rest">
         <AddMember/>

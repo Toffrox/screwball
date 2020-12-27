@@ -1,4 +1,8 @@
-/*h2 {
-    color:#1a1a6b;
-}*/
-
+h2 {
+    margin-bottom: 2em;
+}
+.member {
+    text-align: center;
+    padding: 10px;
+    overflow:hidden;
+}

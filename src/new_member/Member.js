@@ -29,7 +29,7 @@ const AddMember = () =>
 
 
     return (
-        <div>
+        <div class="member">
             <h2>New Member</h2>
             <form onSubmit={handleSubmit}>
                 <Field name="Nation Link" initial={nation} set={e => setNation(e.target.value)}/>

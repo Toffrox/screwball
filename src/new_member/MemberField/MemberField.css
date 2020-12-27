@@ -4,8 +4,10 @@
 .group 			  { 
   position:relative;
   margin-bottom: 1em;
+  overflow:hidden;
 }
 input 				{
+  
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;

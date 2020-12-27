@@ -4,11 +4,30 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ecb3f0;
-  color:#1a1a6b;
+  color:#53006d;
+}
+
+h1 {
+  font-weight:900;
+  font-size:2em;
+  text-align: center;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  text-align:center;
+  border-top: 1px solid #53006d;
+  padding: 1em;
 }
 
 #logo {
-  height: 5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  height: 10em;
   pointer-events: none;
 }
 
@@ -20,10 +39,10 @@ body {
 
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(3600deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -35,9 +54,8 @@ button {
 	border-radius:0.12em;
 	box-sizing: border-box;
 	text-decoration:none;
-	font-family:'Roboto',sans-serif;
-	font-weight:300;
-  color:#f12fff;
+  font-weight:900;
+  color:#53006d;
   background-color: #f395ff;
 	text-align:center;
 	transition: all 0.2s;
