@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import Field from './MemberField';
+import Field from './MemberField/MemberField';
 import Message from './Message';
 import validMember from './validMember';
+import './Member.css';
 
 const AddMember = () =>
 {
@@ -19,7 +20,7 @@ const AddMember = () =>
     const handleSubmit = (event) =>
     {
         event.preventDefault()
-        
+
         setStatusMessage(validMember({nation: nation, forum: forum, disUser: disUser, disNum: disNum}))
 
         setStatus(true)
@@ -29,6 +30,7 @@ const AddMember = () =>
 
     return (
         <div>
+            <h2>New Member</h2>
             <form onSubmit={handleSubmit}>
                 <Field name="Nation Link" initial={nation} set={e => setNation(e.target.value)}/>
                 <Field name="Forum Link" initial={forum} set={e => setForum(e.target.value)}/>

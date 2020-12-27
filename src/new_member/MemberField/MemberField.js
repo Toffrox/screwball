@@ -1,13 +1,19 @@
+import './MemberField.css'
+
 const Field = ({name, initial, set}) =>
 {
     return (
-        <div>
+        <div class="group">
             <input 
-                placeholder={name}
+                //placeholder={name}
                 type="text" 
                 value={initial} 
                 onInput={set}
+                required
             />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>{name}</label>
             <br></br>
         </div>
         

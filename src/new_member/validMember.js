@@ -1,22 +1,15 @@
 
 const validMember = ({nation, forum, disUser, disNum}) =>
 {
-    if (nation && forum && disUser && disNum)
+    if (nation.slice(0, 37) !== "https://politicsandwar.com/nation/id=" || forum.slice(0, 25) !== "https://bkpw.net/profile/")
     {
-        if (nation.slice(0, 37) !== "https://politicsandwar.com/nation/id=" || forum.slice(0, 25) !== "https://bkpw.net/profile/")
-        {
-            return "Invalid links!"
-        }
-        else
-        {
-            return "Member Added"
-        }
-        
+        return "Invalid links!"
     }
     else
     {
-        return "Fields are empty!"
+        return "Member Added"
     }
+
 }
 
 export default validMember;
