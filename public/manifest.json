@@ -2,12 +2,12 @@
   "manifest_version": 2,
 
   "name": "Screwball",
-  "description": "This extension is a starting point to create a real Chrome extension",
+  "description": "Personal helper for yours truly",
   "version": "0.0.1",
 
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "Open the popup"
+    "default_title": "Screwball"
   },
   "icons": {
     "16": "logo-small.png",

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Field from './MemberField/MemberField';
-import Message from './Message';
+import Message from './Message/Message';
 import validMember from './validMember';
 import './Member.css';
 

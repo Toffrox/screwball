@@ -7,10 +7,10 @@
 }
 input 				{
   
-  font-size:18px;
-  padding:10px 10px 10px 5px;
+  font-size:1em;
+  padding:1em 1em 1em 0.5em;
   display:block;
-  width:300px;
+  width:20em;
   border:none;
   border-bottom:1px solid #757575;
   background-color: #fcd0ff;
@@ -21,12 +21,12 @@ input:focus 		{ outline:none; }
 /* LABEL ======================================= */
 label 				 {
   color:#d19dce; 
-  font-size:18px;
+  font-size:1.2em;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
-  left:5px;
-  top:10px;
+  left:0.5em;
+  top:0.6em;
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
@@ -35,12 +35,12 @@ label 				 {
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
   top:-20px;
-  font-size:14px;
+  font-size:0.75em;
   color:#5264AE;
 }
 
 /* BOTTOM BARS ================================= */
-.bar 	{ position:relative; display:block; width:300px; }
+.bar 	{ position:relative; display:block; width:20em; }
 .bar:before, .bar:after 	{
   content:'';
   height:2px; 
@@ -68,7 +68,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .highlight {
   position:absolute;
   height:60%; 
-  width:100px; 
+  width:5em; 
   top:25%; 
   left:0;
   pointer-events:none;
