@@ -1,3 +1,4 @@
+import appendSpreadsheet from './memberSheet'
 
 const validMember = ({nation, forum, disUser, disNum}) =>
 {
@@ -7,6 +8,17 @@ const validMember = ({nation, forum, disUser, disNum}) =>
     }
     else
     {
+        
+        appendSpreadsheet({ 
+            NationID: "new name", 
+            NationName: "new value", 
+            LeaderName: "new value", 
+            NationLink: nation, 
+            DiscordName: disUser, 
+            DiscordID: disNum, 
+            ForumName: "new value", 
+            ForumLink: forum,
+        });
         return "Member Added"
     }
 
