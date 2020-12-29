@@ -3,7 +3,7 @@ import './MemberField.css'
 const Field = ({name, initial, set}) =>
 {
     return (
-        <div class="group">
+        <div className="field">
             <input 
                 //placeholder={name}
                 type="text" 
@@ -11,8 +11,8 @@ const Field = ({name, initial, set}) =>
                 onInput={set}
                 required
             />
-            <span class="highlight"></span>
-            <span class="bar"></span>
+            <span className="highlight"></span>
+            <span className="bar"></span>
             <label>{name}</label>
             <br></br>
         </div>

@@ -11,7 +11,7 @@ function App() {
         Screwball
       </h1>
       <hr></hr>
-      <div class="rest">
+      <div>
         <AddMember/>
       </div>      
     </div>
