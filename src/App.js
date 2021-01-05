@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import AddMember from './new_member/Member';
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <img id="logo" src="swirl.png" alt="Logo"></img>
+      <h1>        
+        Screwball
+      </h1>
+      <hr></hr>
+      <div>
+        <AddMember/>
+      </div>      
     </div>
   );
 }
