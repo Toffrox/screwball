@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Existing keys here will not work. Must generate new project JSON on the Google Cloud dashboard. Must also have new keys for P&W.
+
 ## Available Scripts
 
 In the project directory, you can run:
