@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import appendSpreadsheet from './memberSheet'
+import KEY from 'key.js'
 
 const Message = ({nation, forum, disUser, disNum}) =>
 {
@@ -19,7 +20,7 @@ const Message = ({nation, forum, disUser, disNum}) =>
         {
             const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
-            fetch(proxyurl + "https://politicsandwar.com/api/nation/id=" + nationID + "&key=e650ec9899341f")
+            fetch(proxyurl + "https://politicsandwar.com/api/nation/id=" + nationID + KEY)
             .then(res => res.json())
             .then(
                 (result) => {
